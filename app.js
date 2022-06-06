@@ -6,7 +6,7 @@ const todoSection = document.querySelector('#todo-section');
 
 const ul = document.createElement('ul');
 todoSection.appendChild(ul);
-let check = document.querySelectorAll(".check");
+
 plus.addEventListener('click', () => {
     if (!input.value) {
         alert('Burası boş bırakılamaz!')

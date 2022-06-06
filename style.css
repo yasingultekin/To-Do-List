@@ -19,11 +19,6 @@ input {
     border: none;
     height: 3rem;
 }
-.minus {
-    background-color: lightblue;
-    border: none;
-    height: 3rem;
-}
 
 .plus:hover,
 .minus:hover {
@@ -33,16 +28,6 @@ input {
 li {
     list-style-type: none;
 }
-
-/* .trash {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 2rem;
-    background-color: pink;
-    border: none;
-  
-} */
 
 .close:hover {
     background-color: #f44336;
