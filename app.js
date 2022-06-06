@@ -1,26 +1,25 @@
 const plus = document.querySelector('.plus');
-const minus = document.querySelector('.minus');
 const input = document.querySelector('input');
 const todoSection = document.querySelector('#todo-section');
-// const close = document.querySelector('.close');
 
 const ul = document.createElement('ul');
 todoSection.appendChild(ul);
 
 plus.addEventListener('click', () => {
     if (!input.value) {
-        alert('Burası boş bırakılamaz!')
+        alert('Please write something!')
     }
     else {
-        ul.innerHTML += `<div class="task">
+        ul.innerHTML += 
+        `<div class="task">
         <button class="check">
-        <i class="fa-solid fa-check"></i>
-         </button>
+            <i class="fa-solid fa-check"></i>
+        </button>
         <li class="liste">${input.value}</li>
         
         <button class="delete">
             <i class="far fa-trash-alt"></i>
-         </button>
+        </button>
          </div>`
         input.value = '';
 
