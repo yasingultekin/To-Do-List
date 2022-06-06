@@ -14,7 +14,7 @@ plus.addEventListener('click', () => {
     else {
         ul.innerHTML += `<div class="task">
         <button class="check">
-        <i class="fa-solid fa-square-check"></i>
+        <i class="fa-solid fa-check"></i>
          </button>
         <li class="liste">${input.value}</li>
         
@@ -33,12 +33,20 @@ plus.addEventListener('click', () => {
         for (let i = 0; i < check.length; i++) {
             check[i].onclick = function () {
                 this.parentNode.style.textDecoration = 'line-through';        
-                this.nextElementSibling.style.opacity = '.7';        
+                this.nextElementSibling.style.opacity = '.5';        
+                this.nextElementSibling.style.color = 'green';
+                this.style.backgroundColor = 'green';
+                this.nextElementSibling.style.fontStyle = 'oblique';
+
 }}
         for (let i = 0; i < check.length; i++) {
             check[i].ondblclick = function () {
                 this.parentNode.style.textDecoration = 'none';
                 this.nextElementSibling.style.opacity = '1';    
+                this.nextElementSibling.style.color = 'black';
+                this.style.backgroundColor = 'white';
+                this.nextElementSibling.style.fontStyle = 'normal';   
+                    
 }}
 }
 }});
@@ -53,8 +61,3 @@ input.addEventListener('keydown', (e) => {
 window.onload = () => {
     input.focus();
 }
-
-
-   // <button class="check">
-        // <i class="fa-solid fa-square-check"></i>
-        //  </button>
