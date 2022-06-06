@@ -15,7 +15,7 @@ plus.addEventListener('click', () => {
         <button class="check">
             <i class="fa-solid fa-check"></i>
         </button>
-        <li class="liste">${input.value}</li>
+        <li class="liste">${(input.value).toLocaleUpperCase()}</li>
         
         <button class="delete">
             <i class="far fa-trash-alt"></i>
