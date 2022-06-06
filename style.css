@@ -1,29 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.body {
     background-color: lightblue;
-    height: 100vh;
 }
 
 .button {
     width: 75%;
     height: 3rem;
+    display: inline;
 }
 
 input {
     border: 1px solid pink;
     outline: none;
+    width: 85%;
+    height: 3.5rem;
 }
 
 .plus {
     background-color: rgb(223, 141, 155);
     border: none;
-    height: 3rem;
-    width: 150px;
+    height: 3.5rem;
+    width: 15%;
 }
 
 .plus:hover,
@@ -50,7 +54,7 @@ li {
     margin-bottom: 7rem;
 }
 
-.row {
+.container {
     border-bottom: 5px dotted pink;
 }
 
