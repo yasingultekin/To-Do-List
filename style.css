@@ -19,10 +19,35 @@ input {
     border: none;
     height: 3rem;
 }
+.minus {
+    background-color: lightblue;
+    border: none;
+    height: 3rem;
+}
 
-.plus:hover {
+.plus:hover,
+.minus:hover {
     opacity: .8;
 }
+
+li {
+    list-style-type: none;
+}
+
+/* .trash {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    background-color: pink;
+    border: none;
+  
+} */
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+  }
 
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -36,5 +61,39 @@ input {
 
 .container {
     border-bottom: 5px dotted pink;
+}
+
+.task {
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #0a2ea4;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.check {
+    background-color: #0aa40f;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
