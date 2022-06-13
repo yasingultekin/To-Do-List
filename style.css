@@ -7,7 +7,7 @@
 }
 
 .body {
-    background-color: #E9EFC0;
+    background-color: #f6d365;
     font-family: 'Dekko', cursive;
 }
 
@@ -76,7 +76,7 @@ li {
 .delete {
     background-color: #0a2ea4;
     color: #ffffff;
-    height: 80%;
+    height: 95%;
     width: 40px;
     border-radius: 5px;
     border: none;

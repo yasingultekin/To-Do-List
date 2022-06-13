@@ -48,7 +48,10 @@ plus.addEventListener('click', () => {
                     
 }}
 }
-}});
+}
+});
+
+
 
 input.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
